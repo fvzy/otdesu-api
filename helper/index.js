@@ -1,6 +1,6 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
-const baseURL = `https://otakudesu.moe/`;
+const baseURL = `https://otakudesu.watch/`;
 
 const toDate = (str) => {
   const month = {
