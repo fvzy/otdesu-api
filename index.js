@@ -8,66 +8,66 @@ app.get("/", (req, res) =>
     message: "Service Is Running",
   })
 );
-app.get("/api/otakudesu/home", helper.home);
-app.get("/api/otakudesu/anime/:id", helper.anime);
-app.get("/api/otakudesu/eps/:id", helper.episode);
-app.get("/api/otakudesu/lengkap/:id", helper.lengkap);
-app.get("/api/otakudesu/search/:query", helper.search);
-app.get("/api/otakudesu/genres/:id/:page", helper.genre);
-app.get("/api/otakudesu/complete/:page", helper.complete);
-app.get("/api/otakudesu/schedule", helper.schedule);
-app.get("/api/otakudesu/thumb/:id", helper.thumb);
+app.get("/api/home", helper.home);
+app.get("/api/anime/:id", helper.anime);
+app.get("/api/eps/:id", helper.episode);
+app.get("/api/lengkap/:id", helper.lengkap);
+app.get("/api/search/:query", helper.search);
+app.get("/api/genres/:id/:page", helper.genre);
+app.get("/api/complete/:page", helper.complete);
+app.get("/api/schedule", helper.schedule);
+app.get("/api/thumb/:id", helper.thumb);
 
 app.use("*", (req, res) => {
   var data = {
-        "Otakudesu": {
+        "api": {
             "Home": {
-                "url": "/otakudesu/home",
+                "url": "/api/home",
                 "desc": "Homepage",
             },
             "Complete": {
-                "url": "/otakudesu/complete",
+                "url": "/api/complete",
                 "desc": "Complete/Finished Anime",
             },
             "Complete2": {
-                "url": "/otakudesu/complete/page/${page}",
+                "url": "/api/complete/page/${page}",
                 "params": "pageNumber",
                 "desc": "Complete Pagination",
             },
             "Ongoing": {
-                "url": "/otakudesu/ongoing",
+                "url": "/api/ongoing",
                 "desc": "Ongoing Anime",
             },
             "Schedule": {
-                "url": "/otakudesu/schedule",
+                "url": "/api/schedule",
                 "desc": "Schedule Anime",
             },
             "Genres": {
-                "url": "/otakudesu/genres",
+                "url": "/api/genres",
                 "desc": "Genre List",
             },
             "Genres Id": {
-                "url": "/otakudesu/${id}/page/${page}",
+                "url": "/api/${id}/page/${page}",
                 "params": "id,pageNumber",
                 "desc": "Show Anime by Genre",
             },
             "Search": {
-                "url": "/otakudesu/search/${query}",
+                "url": "/api/search/${query}",
                 "params": "query",
                 "desc": "Search Anime",
             },
             "Detail Anime": {
-                "url": "/otakudesu/anime/${id}",
+                "url": "/api/anime/${id}",
                 "params": "id",
                 "desc": "Detail Anime",
             },
             "Detail Anime batch": {
-                "url": "/otakudesu/batch/${id}",
+                "url": "/api/batch/${id}",
                 "params": "id",
                 "desc": "Detail Anime Batch",
             },
             "Detail Episode": {
-                "url": "/otakudesu/eps/${id}",
+                "url": "/api/eps/${id}",
                 "params": "id",
                 "desc": "Detail Anime's Episode",
             },
