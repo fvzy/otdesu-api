@@ -20,6 +20,7 @@ app.get("/api/thumb/:id", helper.thumb);
 
 app.use("*", (req, res) => {
   var data = {
+        "Repository": "https://github.com/wffzy/otdesu-api",
         "api": {
             "Home": {
                 "url": "/api/home",
