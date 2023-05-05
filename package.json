@@ -1,7 +1,7 @@
 {
     "name": "api-otakudesu",
     "version": "1.0.0",
-    "description": "Rest API of https://otakudesu.moe/",
+    "description": "Rest API of https://otakudesu.lol/",
     "main": "index.js",
     "dependencies": {
         "axios": "^0.21.1",
@@ -14,12 +14,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/revanapriyandi/api-otakudesu.git"
+        "url": "git+https://github.com/wibumoe//api-otakudesu.git"
     },
     "author": "Nunu27",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/revanapriyandi/api-otakudesu/issues"
+        "url": "https://github.com/wibumoe/api-otakudesu/issues"
     },
-    "homepage": "https://github.com/revanapriyandi/api-otakudesu"
+    "homepage": "https://github.com/wibumoe/i-otakudesu"
 }
