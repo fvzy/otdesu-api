@@ -1,6 +1,9 @@
 const app = require("express")();
 const helper = require("./helper");
 const port = process.env.PORT || 5000;
+const cors = require("cors")
+app.use(cors())
+app.use("json spaces", 2)
 
 app.get("/", (req, res) =>
   res.json({
